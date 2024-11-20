@@ -11,6 +11,8 @@ public class Product {
     private String name;
     private boolean isBought;
 
+
+    @Column()
     public String getName() {
         return name;
     }
