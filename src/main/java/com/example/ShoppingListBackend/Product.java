@@ -21,6 +21,10 @@ public class Product {
         return isBought;
     }
 
+    public void setBought(boolean bought) {
+        isBought = bought;
+    }
+
     public Long getId() {
         return id;
     }

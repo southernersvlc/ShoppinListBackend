@@ -19,7 +19,6 @@ public class ProductController {
 
     @GetMapping
     public List<Product> getAllProducts(){
-
         return this.productRepository.findAll();
     }
 /*
@@ -45,4 +44,10 @@ public class ProductController {
         productRepository.deleteById(id);
     }
 
+    @PatchMapping("/{id}")
+    public Product updateProduct(@PathVariable Long id){
+        Product productToUpdate = productRepository.findById(id).get();
+        productToUpdate.setBought(!productToUpdate.isBought());
+        return productRepository.save(productToUpdate);
+    }
 }
