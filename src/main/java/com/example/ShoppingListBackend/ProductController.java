@@ -38,4 +38,11 @@ public class ProductController {
         return savedProduct;
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteProductById(@PathVariable Long id){
+        Optional<Product> productToDelete = productRepository.findById(id);
+
+        productRepository.deleteById(id);
+    }
+
 }
