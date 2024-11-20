@@ -1,0 +1,29 @@
+package com.example.ShoppinListBackend;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Long id;
+    private String name;
+    private boolean isBought;
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isBought() {
+        return isBought;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+}
