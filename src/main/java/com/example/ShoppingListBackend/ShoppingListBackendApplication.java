@@ -1,13 +1,14 @@
-package com.example.ShoppinListBackend;
+package com.example.ShoppingListBackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ShoppinListBackendApplication {
+public class ShoppingListBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ShoppinListBackendApplication.class, args);
+		SpringApplication.run(ShoppingListBackendApplication.class, args);
+		System.out.println("Hello World");
 	}
 
 }

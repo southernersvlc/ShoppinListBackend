@@ -1,4 +1,4 @@
-package com.example.ShoppinListBackend;
+package com.example.ShoppingListBackend;
 
 import jakarta.persistence.*;
 
