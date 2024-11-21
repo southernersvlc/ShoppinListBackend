@@ -8,7 +8,6 @@ public class ShoppingListBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ShoppingListBackendApplication.class, args);
-		System.out.println("Hello World");
 	}
 
 }
