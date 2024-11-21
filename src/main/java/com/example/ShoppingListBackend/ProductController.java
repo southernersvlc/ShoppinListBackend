@@ -37,16 +37,26 @@ public class ProductController {
     }
 
     @PostMapping
-    public Product addProduct(@RequestBody Product product){
-        Product savedProduct = productRepository.save(product);
-        return savedProduct;
+    public ResponseEntity<Product> addProduct(@RequestBody Product product){
+        Optional<Product> optionalProduct = productRepository.findByName(product.getName());
+
+        if (optionalProduct.isPresent()) {
+            return new ResponseEntity<>(optionalProduct.get(), HttpStatus.BAD_REQUEST);
+        }
+
+        productRepository.save(product);
+        return new ResponseEntity<>(product, HttpStatus.CREATED);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteProductById(@PathVariable Long id){
+    public ResponseEntity<Product> deleteProductById(@PathVariable Long id){
         Optional<Product> productToDelete = productRepository.findById(id);
 
+        if(productToDelete.isEmpty()){
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
         productRepository.deleteById(id);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @PutMapping("/{id}")
