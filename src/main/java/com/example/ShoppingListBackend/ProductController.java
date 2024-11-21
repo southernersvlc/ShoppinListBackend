@@ -48,10 +48,14 @@ public class ProductController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteProductById(@PathVariable Long id){
+    public ResponseEntity<Product> deleteProductById(@PathVariable Long id){
         Optional<Product> productToDelete = productRepository.findById(id);
 
+        if(productToDelete.isEmpty()){
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
         productRepository.deleteById(id);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @PatchMapping("/{id}")
