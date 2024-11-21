@@ -9,6 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")
+@CrossOrigin("*")
 
 public class ProductController {
     private final ProductRepository productRepository;
@@ -48,7 +49,7 @@ public class ProductController {
         productRepository.deleteById(id);
     }
 
-    @PatchMapping("/{id}")
+    @PutMapping("/{id}")
     public Product updateProduct(@PathVariable Long id){
         Product productToUpdate = productRepository.findById(id).get();
         productToUpdate.setBought(!productToUpdate.isBought());
