@@ -11,7 +11,7 @@ import java.util.Optional;
 @RequestMapping("/products")
 
 public class ProductController {
-    private ProductRepository productRepository = null;
+    private final ProductRepository productRepository;
 
     public ProductController(ProductRepository productRepository) {
         this.productRepository = productRepository;
@@ -19,17 +19,21 @@ public class ProductController {
 
     @GetMapping
     public List<Product> getAllProducts(){
+
         return this.productRepository.findAll();
     }
-/*
-    @PostMapping
-    public ResponseEntity<Product> createProduct(@RequestBody Product product){
-    //Optional<Product> productOptional = this.productRepository.findByName((product.getName());
-        Product savedProduct = productRepository.save(product);
 
+    @GetMapping("/{id}")
+    public ResponseEntity<Product> getProductById(@PathVariable Long id) {
+        Optional<Product> optionalProduct = productRepository.findById(id);
 
-        return new ResponseEntity<>(savedProduct, HttpStatus.CREATED);
-    }*/
+        if(optionalProduct.isPresent()) {
+            return new ResponseEntity<>(optionalProduct.get(), HttpStatus.OK);
+        }
+
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+
+    }
 
     @PostMapping
     public Product addProduct(@RequestBody Product product){

@@ -11,8 +11,15 @@ public class Product {
     private String name;
     private boolean isBought;
 
+    public Product(Long id, String name, boolean isBought) {
+        this.id = id;
+        this.name = name;
+        this.isBought = isBought;
+    }
 
-    @Column()
+    public Product() {
+    }
+
     public String getName() {
         return name;
     }
@@ -27,9 +34,5 @@ public class Product {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 }
