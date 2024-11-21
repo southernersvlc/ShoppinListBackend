@@ -1,31 +1,46 @@
 # 🛒 **App ShopList**
 
-## 📝 **Introducción**
+## 📝 **Introduction**
 
-En este ejercicio, crearemos una aplicación web que se comunicará con una base de datos para gestionar información. Utilizaremos tecnologías como Spring Boot, JPA y H2 para construir esta conexión. 
-Esta lista permitirá gestionar los ítems que quieres añadir, modificar y eliminar, implementando las operaciones básicas de un CRUD (**Create, Read, Update, Delete**) sobre una lista en memoria del navegador.
+In this exercise, we will create a web application that communicates with a database to manage information. We will use technologies like Spring Boot, JPA, and H2 to build this connection.
+This list will allow you to manage items that you want to add, modify, and delete, implementing the basic CRUD operations (Create, Read, Update, Delete) on an in-memory browser list.
 
-- **Crear**: El usuario podrá añadir nuevos ítems a la lista.
-- **Leer**: Al cargar la página, la lista mostrará los ítems existentes.
-- **Eliminar**: Los ítems podrán ser eliminados individualmente.
-- **Modificar**: Los items podrán ser modificados a comprado o no comprado.
-
----
-
-# 🛒 **Referencia:**
-
+- **Create**: The user will be able to add new items to the list.
+- **Read**: When loading the page, the list will display the existing items.
+- **Delete**: Items can be deleted individually.
+- **Modify**: Items can be marked as purchased or not purchased.
 
 ---
 
-## 📝 **Trello Vista General**
+## 🚀 **Deploy Link**
+[Lista de la Compra](https://lluvia-de-bugs.github.io/ex-js-lista-compra/)
 
 
-## 📝 **Trello Ejemplo Tarea**
+# ⚡ **Referencia:**
+![Lista de la Compra](src/docsReadme/Listgif.gif)
 
+---
+## 📦 **App Packages Structure**
+    |--- src
+        |--- main
+            |--- java
+                |---com.example.ShoppingListBackend
+                        |--- Product
+                        |--- ProductController
+                        |--- ProductRepository
+                        |--- ShoppingListBackendApplication
+        |--- test
+           |--- java
+
+## 📊 **Trello General**
+![Trello](src/docsReadme/trello.png)
+
+## 🗂️ **Trello Task**
+![Trello](src/docsReadme/trelloTarea.png)
 
 ---
 
-## 🎯 **Objetivos de Aprendizaje**
+## 🎯 **Knowledge targets**
 
 1. **API REST con Spring Boot**: Desarrollar un backend con Spring Boot que expondrá una API REST para interactuar con un frontend.
 2. **Conexión de Frontend y Backend**: Conectar la interfaz de usuario (**frontend**) con una base de datos **H2** a través de **JPA**.
