@@ -12,15 +12,11 @@ This list will allow you to manage items that you want to add, modify, and delet
 
 ---
 
-## 🚀 **Deploy Link**
-[Lista de la Compra](https://lluvia-de-bugs.github.io/ex-js-lista-compra/)
-
-
-# ⚡ **Referencia:**
+# ⚡ **App preview:**
 ![Lista de la Compra](src/docsReadme/Listgif.gif)
 
 ---
-## 📦 **App Packages Structure**
+## 📦 **App Structure**
     |--- src
         |--- main
             |--- java
@@ -32,6 +28,7 @@ This list will allow you to manage items that you want to add, modify, and delet
         |--- test
            |--- java
 
+![UML](src/docsReadme/UML.png)
 ## 📊 **Trello General**
 ![Trello](src/docsReadme/trello.png)
 
@@ -42,22 +39,21 @@ This list will allow you to manage items that you want to add, modify, and delet
 
 ## 🎯 **Knowledge targets**
 
-1. **API REST con Spring Boot**: Desarrollar un backend con Spring Boot que expondrá una API REST para interactuar con un frontend.
-2. **Conexión de Frontend y Backend**: Conectar la interfaz de usuario (**frontend**) con una base de datos **H2** a través de **JPA**.
-3. **Manejo de IDs con API**: Aprender a gestionar identificadores únicos (**ID**) proporcionados por una API para cada ítem, asegurando que las operaciones de CRUD estén sincronizadas entre la aplicación frontend y la API.
+1. **REST API with Spring Boot**: Develop a backend using Spring Boot that exposes a REST API to interact with a frontend.
+2. **Frontend and Backend Connection**: Connect the user interface (frontend) with the backend's REST API, storing data in an H2 database.
+3. **Managing IDs with API**: Learn how to handle unique identifiers (IDs) provided by an API for each item, ensuring CRUD operations are synchronized between the frontend application and the API.
 
 ---
 
 ## 💻 Technology Stack:
 
-1.  <img src= "https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square"/>
-2.  <img src= "https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=fff&style=plastic"/>
-3.  <img src= "https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white"/>
-4.  <img src= "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-5.  <img src="https://img.shields.io/badge/Intellij%20Idea-000?logo=intellij-idea&amp;style=for-the-badge"/>
-6.  <img src= "https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
-7.  <img src= "https://shields.io/badge/simple__diarizer-Trello-blue?logo=Trello&style=flat"/>
-8.  <img src= "https://img.shields.io/badge/Lucid-282C33?logo=lucid&logoColor=fff&style=for-the-badge"/>
+<img src= "https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=Spring&logoColor=white"/>
+<img src= "https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white"/>
+<img src= "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Intellij%20Idea-000?logo=intellij-idea&amp;style=for-the-badge"/>
+<img src= "https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
+<img src= "https://shields.io/badge/simple__diarizer-Trello-blue?logo=Trello&style=flat"/>
+<img src= "https://img.shields.io/badge/Lucid-282C33?logo=lucid&logoColor=fff&style=for-the-badge"/>
 
 ---
 
