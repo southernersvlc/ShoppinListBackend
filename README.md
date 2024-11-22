@@ -13,7 +13,7 @@ This list will allow you to manage items that you want to add, modify, and delet
 ---
 
 # ⚡ **App preview:**
-![Lista de la Compra](src/docsReadme/Listgif.gif)
+![Lista de la Compra](docsReadme/Listgif.gif)
 
 ---
 ## 📦 **App Structure**
@@ -28,12 +28,13 @@ This list will allow you to manage items that you want to add, modify, and delet
         |--- test
            |--- java
 
-![UML](images/UML diagram.png)
+![UML](docsReadme/UML_diagram.png)
+
 ## 📊 **Trello General**
-![Trello](src/docsReadme/trello.png)
+![Trello](docsReadme/trello.png)
 
 ## 🗂️ **Trello Task**
-![Trello](src/docsReadme/trelloTarea.png)
+![Trello](docsReadme/trelloTarea.png)
 
 ---
 
