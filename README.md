@@ -28,7 +28,7 @@ This list will allow you to manage items that you want to add, modify, and delet
         |--- test
            |--- java
 
-![UML](src/docsReadme/UML.png)
+![UML](images/UML diagram.png)
 ## 📊 **Trello General**
 ![Trello](src/docsReadme/trello.png)
 
